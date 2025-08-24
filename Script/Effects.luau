@@ -1,14 +1,9 @@
--- R6 FULL FX (client-sided, no claws, only particles via attachment)
 local plr = game.Players.LocalPlayer
 local char = plr.Character or plr.CharacterAdded:Wait()
 local torso = char:WaitForChild("Torso")
-
--- Create attachment on torso
 local attachment = Instance.new("Attachment")
 attachment.Name = "TorsoFXAttachment"
 attachment.Parent = torso
-
--- Helper for NumberSequence from numbers
 local function nsKeys(list)
 	local keys = {}
 	local n = #list
